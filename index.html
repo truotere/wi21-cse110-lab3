@@ -1,63 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 
+  <header>
     <style>
-        header, nav, aside, main, footer {
+        header, main, footer {
+          text-align: center;
           margin: 0.5em; border: thin solid; padding: 0.5em;
           background: rgb(142, 162, 218); color: black; box-shadow: 0 0 0.25em #033;
         }
+        table, th, td {
+          border: 1px solid black;
+        }
+        .myDiv {
+          border: 5px outset rgba(188, 164, 253, 0.932);
+          text-align: center;
+        }
         h1, h2, p { margin: 0; }
         nav, main { float: center; }
-        aside { float: right; }
+        aside { float: left; }
         footer { clear: both; }
+        figcaption {text-align: right; }
     </style>
 
-  <head>
     <meta charset="utf-8">
-    <title>This is an app with a long head</title>
+    </head>
+      <title>Teresa Truong's Website</title>
+    </head>
     <link rel="stylesheet" href="mystyle.css">
-
-  </head>
+  </header>
   
   <body>
 
-    <header class="page-header">
-        <h1>Welcome to Teresa’s Recap of 2020 Website!</h1>
-    </header>
-
     <main>
     <h1> <em>Welcome to Teresa's homepage!</em> </h1>
-    <p>Feel free to bookmark this to keep an eye on my 2020 updates.</p>
+    <p>Feel free to bookmark this page to keep an eye on my annual updates.</p>
     </main>
 
-    <h2>My 5 Moods of 2020</h2>
-    <ol>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ol>
+    <figure>
+      <img src="https://images.squarespace-cdn.com/content/v1/5ad93e923e2d09fb53c3d61f/1552256239237-UNFGCRHSH7EX8ALZG4V6/ke17ZwdGBToddI8pDm48kG87Sfbgg29A4BYEDq3OXvgUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcf4OxbJOyh_wHUnyc4kQLQ6SBshRGOku7c30Y_IRDNPta8R2IY5BHMaEj1zOWoDTZ/Seattle%2C+Washington+v1.jpg" data-image="https://images.squarespace-cdn.com/content/v1/5ad93e923e2d09fb53c3d61f/1552256239237-UNFGCRHSH7EX8ALZG4V6/ke17ZwdGBToddI8pDm48kG87Sfbgg29A4BYEDq3OXvgUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcf4OxbJOyh_wHUnyc4kQLQ6SBshRGOku7c30Y_IRDNPta8R2IY5BHMaEj1zOWoDTZ/Seattle%2C+Washington+v1.jpg" alt="Trulli" style="width:100%">
+      <figcaption>Seattle, Washington</figcaption>
+    </figure>
 
-    <h3>Goals for 2020 vs. What Ended Up Happening</h3>
-    <ul>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ul>
+    <hr>
+
+    <section>
+
+      <h2>My 3 Key Takeaways from 2020</h2>
+      <ol>
+        <li>Do not take anything for granted.</li>
+        <li>People come into your life to teach you a lesson.</li>
+        <li>Anything is possible.</li>
+      </ol>
+    </section>
+
+    <h3>Goals for 2020 vs. <code>What Ended Up Happening</code></h3>
+
+    <table>
+      <caption> <span style="color:rgb(78, 78, 211);font-weight:bold">Summary of Goals & Accomplishments of 2020 </span> </caption>
+      <colgroup>
+        <col style="background-color:aliceblue">
+        <col style="background-color:beige">
+      </colgroup>
+      <tr>
+        <th>Ongoing Plans</th>
+        <th>Accomplished Goals</th>
+      </tr>
+      <tr>
+        <td>Travel to Seattle</td>
+        <td>Listen to more podcasts</td>
+      </tr>
+      <tr>
+        <td>Learn SQL</td>
+        <td>Practice Leetcode</td>
+      </tr>
+      <tr>
+        <td>Create a financial application</td>
+        <td>Take dance workshops</td>
+      </tr>
+    </table>
+
+    <br> 
+
+    
+    <iframe sandbox srcdoc="<p>Highlights from 2020"></iframe>
+
+    <br>
+
+    <div class="myDiv">
+      <h3><i>The best is yet to come.</i></h3>
+    </div>
+
+    <hr>
+
+    <aside>
+
+    <section>
+      <h2><b>My Outlook for 2021</b></h2>
+    </section>
+
+    <picture>
+      <img src="https://i.pinimg.com/474x/5f/19/6c/5f196c6527b1522787d728e8b88b2fca--tiny-flowers-poppy-flowers.jpg" alt="Flowers">
+    </picture>
+
+    <audio controls>
+      <source src="horse.mp3" type="audio/mpeg">
+    </audio>
+
+      <ul>
+        <pre>
+        <li><i>Learn to take breaks.</i></li>
+        <li><i>Protect your peace.</i></li>
+        <li><i>Invest in your mental and physical health.</i></li>
+        <li><i>Be kind to everyone, including yourself.</i></li>
+        </pre>
+      </ul>
+    </aside>
+
 
   </body>
 
 
+
+
   <footer>
-    <p>Contact me! Email: tetruong@ucsd.edu</p>
+    <nav> <strong>Contact me!</strong> Email: <a href="mailto:tetruong@ucsd.edu">tetruong@ucsd.edu</a> </nav>
   </footer>
 
 </html>
-
 
 
 
