@@ -3,16 +3,21 @@
 
   <header>
     <style>
-        header, main, footer {
+        main {
           text-align: center;
-          margin: 0.5em; border: thin solid; padding: 0.5em;
-          background: rgb(142, 162, 218); color: black; box-shadow: 0 0 0.25em #033;
+          margin: 2em; border: thin solid; padding: 1em;
+          border-color: rgb(248, 244, 250); box-shadow: 0 0 1em  #df7cfd;
+        } 
+        footer {
+          text-align: center;
+          margin: 10px; border: thin solid; padding: 8px;
+          color: black; box-shadow: 0 0 1em #df7cfd;
         }
         table, th, td {
-          border: 1px solid black;
+          border: 1px solid #ba9785;
         }
         .myDiv {
-          border: 5px outset rgba(188, 164, 253, 0.932);
+          border: 5px outset rgba(248, 244, 255, 0.932);
           text-align: center;
         }
         h1, h2, p { margin: 0; }
@@ -33,7 +38,7 @@
 
     <main>
     <h1> <em>Welcome to Teresa's homepage!</em> </h1>
-    <p>Feel free to bookmark this page to keep an eye on my annual updates.</p>
+    <p>Feel free to bookmark this blog page to keep an eye on my annual updates.</p>
     </main>
 
     <figure>
@@ -70,7 +75,7 @@
         <td>Listen to more podcasts</td>
       </tr>
       <tr>
-        <td>Learn SQL</td>
+        <td>Learn how to surf</td>
         <td>Practice Leetcode</td>
       </tr>
       <tr>
@@ -81,14 +86,16 @@
 
     <br> 
 
-    
-    <iframe sandbox srcdoc="<p>Highlights from 2020"></iframe>
+    <div style="width: 100%"><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=seattle,%20washington+(My%20Business%20Name)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.maps.ie/route-planner.htm">Google Route Planner</a></div>
 
     <br>
 
     <div class="myDiv">
-      <h3><i>The best is yet to come.</i></h3>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Zilla Slab">
+      <h4 id ="quote">It's your <b>attitude</b> not your aptitude, that determines your altitude." - Zig Ziglar</h4>
     </div>
+
+    <br>
 
     <hr>
 
@@ -98,18 +105,43 @@
       <h2><b>My Outlook for 2021</b></h2>
     </section>
 
-    <picture>
+    <br>
+
+    <div class="summary">
+      Never did I think I would graduate from university in the midst 
+      of a <p class="summary">global pandemic!</p>Nevertheless, I am still
+      optimistic for what my future brings post-graduation. This past year
+      has been the most eye-opening for me in terms of I want to do with my
+      life. I picked up a minor in Computer Science two years
+      ago with <p class="zero">zero background</p>in computer science and absolutely no clue
+      as to what programming entails. My previous career path was to work in
+      the finance industry, but I completely changed course to pursue a more
+      fulfilling and challenging career. I must say it is quite extraordinary to
+      see how far I've come in my journey--blindly learning loops and pointers,
+      staying in the computer lab past midnight to debug my program, and most importantly,
+      overcoming self doubt. Before I knew it, I found clarity in my purpose and aspirations.
+      I used to be daunted by the idea of not making it through to upper-division level courses, but 
+      here I am researching new software tools and building small projects as my favorite
+      passtime. I know I still have so much to learn and I'm thrilled to finally go into the
+      "real world" and learn through hands-on industry-level experience. 
+
+    </div>
+
+    </p>
+
+    <picture id = "flowerpic">
       <img src="https://i.pinimg.com/474x/5f/19/6c/5f196c6527b1522787d728e8b88b2fca--tiny-flowers-poppy-flowers.jpg" alt="Flowers">
     </picture>
 
-    <audio controls>
-      <source src="horse.mp3" type="audio/mpeg">
+    <br> 
+
+    <audio controls="controls">
+      <source src="https://p.scdn.co/mp3-preview/83090a4db6899eaca689ae35f69126dbe65d94c9?cid=null" type="audio/mpeg"/>
     </audio>
 
       <ul>
         <pre>
         <li><i>Learn to take breaks.</i></li>
-        <li><i>Protect your peace.</i></li>
         <li><i>Invest in your mental and physical health.</i></li>
         <li><i>Be kind to everyone, including yourself.</i></li>
         </pre>
@@ -123,7 +155,15 @@
 
 
   <footer>
-    <nav> <strong>Contact me!</strong> Email: <a href="mailto:tetruong@ucsd.edu">tetruong@ucsd.edu</a> </nav>
+    <nav> <strong>Let's connect!</strong> 
+  
+    <div class="flex-container">
+      <div><a href="mailto:tetruong@ucsd.edu">Email</a></div>
+      <div><a href="https://www.linkedin.com/in/tetruong">LinkedIn</a></div>
+      <div><a href="https://github.com/truotere">Github</a></div>  
+    </div>
+
+      </nav>
   </footer>
 
 </html>
