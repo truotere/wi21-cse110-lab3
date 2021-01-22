@@ -13,6 +13,12 @@
 body {
     background-color:lavenderblush;
 }
+
+@media screen and (min-width: 1000px) {
+    body {
+      background-color: lavender;
+    }
+}
   
 * {
     clear: left;
